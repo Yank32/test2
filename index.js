@@ -62,7 +62,7 @@ member.roles.add("724986317921976392");
       .setImage("https://i.imgur.com/IrDN8J4.gif")
       .setDescription(`**${member.user}**, bem-vindo(a) a **${guild.name}**! Atualmente estamos com **${member.guild.memberCount} membros**, leia as regras e se divirta com nosco da Rede Ender! :heart:`)
       .setThumbnail(member.user.displayAvatarURL({ dynamic: true, format: "png", size: 1024 }))
-      .setFooter("Rede Ender")
+      .setFooter("AetherMC")
       .setTimestamp();
 
     channel.send(embed);
@@ -71,7 +71,7 @@ member.roles.add("724986317921976392");
 
 client.on("ready", () => {
   let activities = [
-      `${config.prefix}help Rede Ender e fazendo uma Stream`,
+      `${config.prefix}help AetherMC`,
     ],
     i = 0;
   setInterval( () => client.user.setActivity(`${activities[i++ % activities.length]}`, {
@@ -98,7 +98,7 @@ client.on("guildMemberRemove", async (member) => {
       .setImage("https://i.imgur.com/nh6q0jR.gif")
       .setDescription(`**${member.user.username}**, saiu do servidor! :broken_heart:`)
       .setThumbnail(member.user.displayAvatarURL({ dynamic: true, format: "png", size: 1024 }))
-      .setFooter("Rede Ender")
+      .setFooter("AetherMC")
       .setTimestamp();
 
     channel.send(embed);
