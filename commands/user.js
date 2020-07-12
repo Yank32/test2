@@ -5,7 +5,7 @@ module.exports = {
 
     run: async (client, message, args) => {
         let uEmbed = new MessageEmbed()
-            .setColor('RAMDOM')
+            .setColor('RANDOM')
             .setTitle("User Info")
             .setThumbnail(message.guild.iconURL)
             .setAuthor(`${message.author.username} Info`, message.author.displayAvatarURL)
@@ -14,7 +14,7 @@ module.exports = {
             .addField("**ID:**", `${message.author.id}`, true)
             .addField("**Status:**", `${message.author.presence.status}`, true)
             .addField("**Created At:**", `${message.author.createdAt}`, true)
-            .setFooter(`Rede | Ender`, client.user.displayAvatarURL);
+            .setFooter(`Aether | MC`, client.user.displayAvatarURL);
     
         message.channel.send(uEmbed);
         }
